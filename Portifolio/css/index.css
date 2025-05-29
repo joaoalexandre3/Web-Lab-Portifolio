@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0 20px;
+}
+
+/* Imagem de perfil */
+img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Parágrafo de introdução */
+p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0 15px;
+}
+
+/* Navegação */
+nav {
+  background-color: #f2f2f2;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+}
+
+nav li {
+  margin: 0 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Rodapé */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
